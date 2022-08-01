@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redactr Project</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+  <header>
+    <h1>REDACT APP</h1>
+  </header>
+ 
+  <section class="container">
+    <h1>Redact your message here!</h1>
+    <p>Redacted words would not be displayed to the public</p>
+    <form>
+      <div class="form--grp">
+        <label for="email" class="email" class="form--label">Email Address:</label>
+        <input class="form--input "type="email" id="" name="" placeholder="Your email" required>
+      </div>
+      <div class="form--grp">
+        <label for="usermessage" class="message" class="form--label">Type your message:</label>
+        <textarea name="usermessage" id="usermessage" cols="30" placeholder="Message" rows="8"></textarea>
+      </div>
+      <div class="form--grp">
+        <label for="hiddenmessage" class="hiddenmessage" class="form--label">Specify the word(s) to be hidden(seperated by space):</label>
+        <input class="form--input "type="text" id="hiddenmessage" name="hiddenmessage" placeholder="" required>
+      </div>
+      <div class="form--grp">
+        <label for="replacemt-symbol" class="replacemt-symbol" class="form--label"> Specify the replacement symbol:</label>
+        <input class="form--input "type="text" id="replacemt-symbol" name="replacemt-symbol" placeholder="*" value="*">
+      </div>
+      <div class="form--grp">
+        <button class="form--input "type="button" id="btn-submit">Redact</button>
+      </div>
+    </form>
+    <div class="stats--wrapper">
+      <h3>Redact App Stats</h3>
+      <p id="stats--words">Total words scanned: </p>
+      <p id="replaced--words">Total number of replaced word: </p>
+      <p id="time--taken">Time taken: </p>
+    </div>
+  </section>
+  <footer></footer>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
