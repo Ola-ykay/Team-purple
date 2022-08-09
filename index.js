@@ -55,4 +55,4 @@ function handleFxns(textArray) {
     };
   }
   return replacedWordNum;
-}
+};
