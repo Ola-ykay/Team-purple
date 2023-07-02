@@ -37,7 +37,7 @@ After typing the phone number into the form field, the UI indicates that it is a
 
 ### 02- Redactr - Scramble some words from a body of text content
 
-[https://redactr-app.netlify.app/]
+https://redactr-app.netlify.app/
 
 #### Scenario
 
